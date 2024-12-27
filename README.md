@@ -21,4 +21,7 @@ Buysell is a comprehensive E-Commerce project built using the MERN stack (MongoD
 - Express.js
 - MongoDB
 
+### License
+- This project is licensed under the MIT License. See the LICENSE file for more information.
+
 ## wait for the latest version
