@@ -1,0 +1,16 @@
+.HomeSlider {
+    background-image: linear-gradient(to right top, #6cdbfd, #42b7fa, #209fda, #118ec0, #016391);
+  }
+/* Style for all dots */
+.slick-dots li button:before {
+  color: var(--color-gray); /* Inactive dot color */
+  border-radius: 50%; /* Make dots circular */
+  width: 10px; /* Dot width */
+  height: 10px; /* Dot height */
+  opacity: 1; /* Ensure dots are fully visible */
+}
+
+/* Style for the active dot */
+.slick-dots li.slick-active button:before {
+  color: var(--color-cursor); /* Active dot color */
+}

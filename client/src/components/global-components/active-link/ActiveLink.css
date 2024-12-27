@@ -1,0 +1,10 @@
+  .global-Link {
+    border-bottom: 1px solid transparent;
+    font-size: 13px;
+    transition-property: color, border;
+    transition-duration: 0.25s;
+  }
+  .global-Link.active, .global-Link:hover {
+    color: var(--color-primary);
+    border-bottom: 1px solid var(--color-primary);
+  }

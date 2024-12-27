@@ -1,0 +1,122 @@
+.item-property {
+  box-shadow: inset 0px 0px 5px black;
+  width: 90%;
+  padding: 20px;
+  padding-bottom: 30px;
+  margin-top: 3rem;
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+  transition-property: border;
+}
+.item-property:hover {
+  border: 1px solid var(--border-hover-color);
+  box-shadow: rgb(204, 230, 255) 0px 2px 8px;
+  transition: ease-in-out 0.5s;
+}
+  .design {
+    width: 23rem;
+    background-image: url("../../../assets/intro-home-bg.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px;
+}
+  .Design-box-content .overlay {
+    position: relative;
+    border-radius: 5px;
+    content: "";
+    z-index: 2;
+    transition: background 0.2s;
+  }
+  .show-service-icons {
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 5px black;
+    margin: auto;
+    height: 8rem;
+  }
+  .show-service-icons .overlay {
+    position: relative;
+    border-radius: 5px;
+    content: "";
+    width: 100%;
+    height: 8rem;
+    z-index: 2;
+    transition: background 0.2s;
+    background: var(--color-overlay);
+    border: 1px solid var(--color-primary-variant);
+  }
+  .show-service-icons .overlay:hover {
+    background: transparent;
+    z-index: 1;
+  }
+.lottie{
+  width: 400px;
+  height: 400px;
+}
+.service-item-box {
+  border: 1px solid;
+}
+.service-item-box:hover {
+  border-color: var(--color-bg-variant);
+}
+.service-item-box:hover .service-item-text {
+  color: var(--color-bg-variant);
+}
+@media screen and (max-width: 1280px) {
+  .text-role {
+    font-size: 20px;
+}
+}
+@media screen and (max-width: 540px) {
+  .text-role {
+    font-size: 13px;
+  }
+  .item-property {
+    width: 95%;
+}
+  .lottie{
+    width: 260px;
+    height: 260px;
+  }
+.box-items {
+  display: flex;
+  flex-direction: column;
+}
+.design {
+  width: 80%;
+  padding: 0px;
+}
+}
+@media screen and (max-width: 414px) {
+.text-role {
+  font-size: 13px;
+}
+}
+  @media screen and (max-width: 280px) {
+    .item-property {
+      width: 97%;
+  }
+  .text-role {
+    margin-top: -1rem;
+    font-size: 11px;
+    width: 100%;
+}
+    .lottie{
+      width: 200px;
+      height: 200px;
+    }
+  .box-items {
+    display: flex;
+    flex-direction: column;
+  }
+  .design {
+    width: 13rem;
+    height: 13rem;
+    background-image: none;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+}
+p.design-para {
+  font-size: 11px;
+  margin-top: 10px;
+}
+  }

@@ -1,0 +1,14 @@
+.services-statistics {
+    .ProductsCharts {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 900px)
+{
+    .services-statistics {
+        .ProductsCharts {
+            flex-direction: column;
+        }
+    }
+}
