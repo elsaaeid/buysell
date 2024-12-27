@@ -1,7 +1,5 @@
 import axios from "axios";
-import { BACKEND_URL } from "../../helper.js";
-
-const API_URL = `${BACKEND_URL}/api/cart/`;
+const API_URL = `${process.env.BACKEND_URL}/api/cart/`;
 
 // Add item to cart
 const addToCart = async (formData) => {

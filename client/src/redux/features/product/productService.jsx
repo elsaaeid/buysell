@@ -1,7 +1,6 @@
 import axios from "axios";
-import {BACKEND_URL} from "../../helper.js";
 
-const API_URL = `${BACKEND_URL}/api/products/`;
+const API_URL = `${process.env.BACKEND_URL}/api/products/`;
 
 // Create New Product
 const createProduct = async (formData) => {
