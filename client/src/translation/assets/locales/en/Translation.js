@@ -1,10 +1,5 @@
 
 const items = {
-  "landingContainer": {
-    "title": "Today's offers for digital solutions",
-    "btn": "Contact us now",
-    "article": "In today's rapidly evolving digital landscape, staying ahead of the competition requires innovative solutions that can transform the way you work. That's where we come in.",
-  },
     "chat": {
       "great": "Hello, Welcome To My portfolio Agent",
       "askName": "Please enter your name",
