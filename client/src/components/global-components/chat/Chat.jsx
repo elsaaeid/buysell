@@ -59,18 +59,18 @@ const Chat = () => {
           id: 'ask_howto',
           options: [
               {
-                  value: 'Services',
-                  label: t('chat.servicesPrompt'),
-                  trigger: 'services',
+                  value: 'Products',
+                  label: t('chat.productsPrompt'),
+                  trigger: 'products',
               },
           ],
       },
       {
-          id: 'services',
+          id: 'products',
           options: [
-              { value: 'Websites development', label: t('chat.webDevelopment'), trigger: 'contacts' },
-              { value: 'Graphic designing', label: t('chat.graphicDesigning'), trigger: 'contacts' },
-              { value: 'Photography for products', label: t('chat.photography'), trigger: 'contacts' },
+              { value: 'Clothes products', label: t('chat.clothesproducts'), trigger: 'contacts' },
+              { value: 'Housewares products', label: t('chat.housewaresproducts'), trigger: 'contacts' },
+              { value: 'Health Beauty products', label: t('chat.healthBeautyproducts'), trigger: 'contacts' },
           ],
       },
       {
