@@ -71,6 +71,8 @@ const Chat = () => {
               { value: 'Clothes products', label: t('clothes.theDesc'), trigger: 'contacts' },
               { value: 'Housewares products', label: t('houseWares.theDesc'), trigger: 'contacts' },
               { value: 'Health Beauty products', label: t('healthBeauty.theDesc'), trigger: 'contacts' },
+              { value: 'Electronics products', label: t('electronics.theDesc'), trigger: 'contacts' },
+              { value: 'School Tools products', label: t('schoolTools.theDesc'), trigger: 'contacts' },
           ],
       },
       {
