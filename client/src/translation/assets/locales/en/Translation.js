@@ -27,11 +27,8 @@ const items = {
     },
     "language": "Language",
     "Home": "Home",
-    "About": "About",
     "Contact": "Contact",
-    "logoTitle" : "My portfolio",
     "noImg": "No image set for this Project",
-    "letTalk": "Let's Talk",
     "comments": "Comments",
     "replies": "replies",
     "addComment": "Add Comment",
@@ -46,7 +43,7 @@ const items = {
     "edit": "Edit",
     "delete": "Delete",
     "main": {
-      "introDesc": "Welcome back to Elegant Metallic",
+      "introDesc": "Welcome back to Buysell",
     },
     "homeContainer" : {
       "Buysell": "Buysell",
@@ -56,7 +53,6 @@ const items = {
       "btnLeft": "Sign Up For Free",
       "btnRight": "Shop Now",
     },
-    "featureCaption": "As you scroll down, to see more available services",
     "profile" : {
       "name":"Profile",
       "role": "Role",
@@ -150,13 +146,6 @@ const items = {
     "Messenger": "Messenger",
     "WhatsApp": "WhatsApp",
     "fullName": "Your Full Name",
-    "inputService": "Supply us an option of the service",
-    "service": "service",
-    "message": "Your Message",
-    "Service1": "Website Development",
-    "Service2": "Graphic Designing & Web Designing",
-    "Service3": "Products Photography",
-    "Service4": "SEO Optimization",
   },
   "item": {
     "name": "Product Name",
