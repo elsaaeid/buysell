@@ -68,9 +68,9 @@ const Chat = () => {
       {
           id: 'products',
           options: [
-              { value: 'Clothes products', label: t('chat.clothesproducts'), trigger: 'contacts' },
-              { value: 'Housewares products', label: t('chat.housewaresproducts'), trigger: 'contacts' },
-              { value: 'Health Beauty products', label: t('chat.healthBeautyproducts'), trigger: 'contacts' },
+              { value: 'Clothes products', label: t('clothes.theDesc'), trigger: 'contacts' },
+              { value: 'Housewares products', label: t('houseWares.theDesc'), trigger: 'contacts' },
+              { value: 'Health Beauty products', label: t('healthBeauty.theDesc'), trigger: 'contacts' },
           ],
       },
       {
