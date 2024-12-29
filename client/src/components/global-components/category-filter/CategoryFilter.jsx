@@ -1,6 +1,6 @@
 import React from "react";
-import DropdownTabs from "./DropdownTabs/DropdownTabs";
-import { ItemTabs } from "./DropdownTabs/ItemTabs";
+import DropdownTabs from "../DropdownTabs/DropdownTabs";
+import { ItemTabs } from "../DropdownTabs/ItemTabs";
 import i18n from 'i18next'; // Ensure you import i18n if you're using it for language checks
 
 const CategoryFilter = ({ 

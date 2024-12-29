@@ -6,7 +6,6 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { NavLink } from 'react-router-dom';
 import "./RelatedItems.css";
-import Video from '../Video';
 import { Context } from '../../../context/Context';
 import { t } from 'i18next';
 
@@ -55,31 +54,6 @@ function Item(props) {
                         className="responsive-image" // Add a class for responsive images
                     />
                 )}
-                {props.item?.video ? (
-                    <Video
-                        src={props.item.video.filePath}
-                        poster={props.item.video.fileName}
-                        controls
-                        loop
-                        muted
-                    />
-                )
-                : null}
-                {props.item?.videoUrl ? (
-                    <iframe
-                    width="100%"
-                        title={props.item?.videoUrl}
-                        src={props.item?.videoUrl}
-                        style={{ width: '100%', height: '100%', border: 0, borderRadius: '5px' }}
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                        referrerpolicy="strict-origin-when-cross-origin" 
-                    ></iframe>
-                    ) 
-                    :
-                    null
-                }
             </span>
             <Box className="flex flex-row justify-between items-center w-full">
                 <NavLink 

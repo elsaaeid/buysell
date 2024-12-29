@@ -5,7 +5,7 @@ import Forget from "../pages/auth-pages/Forget.js";
 import Reset from "../pages/auth-pages/Reset.js";
 import Verify from "../pages/auth-pages/Verify.js";
 import LoginWithCode from "../pages/auth-pages/LoginWithCode.js";
-import Error from '../pages/portfolio-pages/Error.jsx';
+import Error from '../pages/main-pages/Error.jsx';
 import { Routes, Route } from "react-router-dom";
 import UserList from "../pages/dashboard-pages/user-list/UserList.jsx";
 import MainLayout from "../components/global-components/layout/MainLayout.jsx";
@@ -13,30 +13,30 @@ import DashboardLayout from "../components/global-components/layout/DashboardLay
 import EditProfile from "../components/global-components/profile/EditProfile.js";
 import ChangePassword from '../components/global-components/changePassword/ChangePassword.js';
 import PageMenu from "../components/global-components/page-menu/PageMenu.jsx";
-import Home from '../pages/portfolio-pages/home/Home.jsx';
-import Contact from '../pages/portfolio-pages/contact/Contact.jsx';
-import Clothes from '../pages/portfolio-pages/clothes/Clothes.jsx';
-import Clothe from '../pages/portfolio-pages/clothes/Clothe.jsx';
-import HealthBeauties from '../pages/portfolio-pages/health-beauty/HealthBeauties.jsx';
-import HealthBeauty from '../pages/portfolio-pages/health-beauty/HealthBeauty.jsx';
-import Electronics from '../pages/portfolio-pages/electronics/Electronics.jsx';
-import Electronic from '../pages/portfolio-pages/electronics/Electronic.jsx';
-import SchoolTools from '../pages/portfolio-pages/school-tools/SchoolTools.jsx';
-import SchoolTool from '../pages/portfolio-pages/school-tools/SchoolTool.jsx';
-import Housewares from '../pages/portfolio-pages/housewares/Housewares.jsx';
-import Houseware from '../pages/portfolio-pages/housewares/Houseware.jsx';
+import Home from '../pages/main-pages/home/Home.jsx';
+import Contact from '../pages/main-pages/contact/Contact.jsx';
+import Clothes from '../pages/main-pages/clothes/Clothes.jsx';
+import Clothe from '../pages/main-pages/clothes/Clothe.jsx';
+import HealthBeauties from '../pages/main-pages/health-beauty/HealthBeauties.jsx';
+import HealthBeauty from '../pages/main-pages/health-beauty/HealthBeauty.jsx';
+import Electronics from '../pages/main-pages/electronics/Electronics.jsx';
+import Electronic from '../pages/main-pages/electronics/Electronic.jsx';
+import SchoolTools from '../pages/main-pages/school-tools/SchoolTools.jsx';
+import SchoolTool from '../pages/main-pages/school-tools/SchoolTool.jsx';
+import Housewares from '../pages/main-pages/housewares/Housewares.jsx';
+import Houseware from '../pages/main-pages/housewares/Houseware.jsx';
 import productsItems from "../components/global-components/global/productsItems.js"
 import mainItems from "../components/global-components/global/mainItems.js"
 import dashboardItems from "../components/global-components/global/dashboardItems.js"
 import { t } from 'i18next';
-import Checkout from '../pages/portfolio-pages/checkout/Checkout.jsx';
-import Shows from '../pages/portfolio-pages/shows/Shows.jsx';
-import Show from '../pages/portfolio-pages/shows/Show.jsx';
+import Checkout from '../pages/main-pages/checkout/Checkout.jsx';
+import Shows from '../pages/main-pages/shows/Shows.jsx';
+import Show from '../pages/main-pages/shows/Show.jsx';
 import AddProducts from '../pages/dashboard-pages/addProducts/AddProducts.jsx';
 import EditProducts from '../pages/dashboard-pages/editProducts/EditProducts.jsx';
 import ProductsDashboard from '../pages/dashboard-pages/products-dashboard/index.jsx';
-import Products from '../pages/portfolio-pages/products/Products.jsx';
-import Product from '../pages/portfolio-pages/products/Product.jsx';
+import Products from '../pages/main-pages/products/Products.jsx';
+import Product from '../pages/main-pages/products/Product.jsx';
 
 
 const index = () => {
@@ -69,7 +69,7 @@ const index = () => {
           <Verify />
         }
       />
-      {/*Portfolio*/}
+      {/*main*/}
       <Route path='/' element={
         <MainLayout mainItems={mainItems} productsItems={productsItems}>
           <Home />

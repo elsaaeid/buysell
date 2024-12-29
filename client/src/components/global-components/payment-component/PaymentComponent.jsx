@@ -7,9 +7,9 @@ import { Box } from '@mui/material';
 import { tokens } from "../../../theme";
 import { useTheme } from "@mui/material";
 import { useTranslation } from 'react-i18next';
-import { BACKEND_URL } from "../../../redux/helper.js";
 
-const API_URL = `${BACKEND_URL}/api/cart/`;
+
+const API_URL = `${process.env.BACKEND_URL}/api/cart/`;
 
 const PaymentComponent = () => {
     // Translation

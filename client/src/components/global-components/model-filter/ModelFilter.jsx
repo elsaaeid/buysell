@@ -13,7 +13,7 @@ const ModelFilter = ({
   rotateModel,
  }) => {
   // Translation
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   // Extract unique categories from items
   const models = items.reduce((acc, { model, model_ar }) => {
     if (!acc.some(cat => cat.en === model)) {
@@ -52,7 +52,7 @@ const ModelFilter = ({
               itemClass={orderTabState === en ? "dropdown-tabs dropdown-active-tabs" : "dropdown-tabs"}
               itemClick={() => {
                 toggleItemTab(en, ar, counter, modelTitle, filteredModel);
-                hideMore(); // Call hideMore when this tab is clicked
+                hideModelMore(); // Call hideModelMore when this tab is clicked
               }}
               itemTitle={modelTitle}
             />

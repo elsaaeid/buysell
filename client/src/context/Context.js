@@ -110,11 +110,6 @@ export const ContextProvider = ({ children }) => {
       setJoinState(!(isSuccess && isLoggedIn));
   }, [isLoggedIn, isSuccess]);
 
-  useEffect(() => {
-    const translatedCategory = i18n.language === 'en' ? categoryState : items.find(item => item.category === categoryState)?.category_ar;
-    setCategoryState(translatedCategory);
-  }, [i18n.language]);
-
   //Dropdown
    const toggleItemTab = (category, category_ar, num, order, filterTap) => {
     // Dynamically set categoryState based on the current language

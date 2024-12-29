@@ -4,7 +4,7 @@ import { Box, Typography } from '@mui/material';
 import { t } from 'i18next';
 import CommentManage from '../comment-manage/CommentManage';
 import { useDispatch } from 'react-redux';
-import RepliesList from '../../portfolio-components/replies-list/RepliesList';
+import RepliesList from '../../main-components/replies-list/RepliesList';
 import {
     commentItem,
     replyItem,
