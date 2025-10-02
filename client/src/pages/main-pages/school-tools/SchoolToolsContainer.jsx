@@ -35,7 +35,7 @@ const SchoolToolsContainer = () => {
     <ItemsContainer 
       items={filteredSchoolTools}
       selectFilteredItems={selectFilteredProducts}
-      itemPath="school-tools"
+      itemPath="school-tool"
       search={search}
       setSearch={setSearch}
     />
