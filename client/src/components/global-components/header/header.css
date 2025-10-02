@@ -1,0 +1,329 @@
+header {
+  width: 100%;
+  position: fixed;
+  top: 7%;
+  height: 12%;
+  z-index: 300;
+  border: 1px solid var(--color-primary-variant);
+}
+.header__container {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+.profile h1 {
+    font-size: 18px;
+    font-weight: bolder;
+}
+.active-servicesTabs {
+    background: var(--color-primary);
+    color: var(--color-link);
+    transition: 0.5s all ease-in-out;
+}
+.servicesTabs {
+    background: var(--color-white);
+    text-align: center;
+    cursor: pointer;
+    transition-property: color background;
+}
+.servicesTabs:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+  transition: 0.5s all ease-in-out;
+}
+#dropDownTitle {
+  text-align: center;
+  color: var(--color-white);
+  font-size: 19px;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.me {
+  width: 80px;
+  height: auto;
+}
+.services-select {
+  position: relative; /* Ensure the dropdown is positioned correctly */
+}
+
+.MuiMenu-paper {
+  position: absolute; /* Position the dropdown menu absolutely */
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+/*---------------------search-style-----------------------*/
+.searchBox {
+  position: absolute;
+  top: 0px;
+  right: -102%;
+  width: 100%;
+  padding: 15px;
+  height: 100%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  background: var(--color-opacity-white);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  z-index: 20;
+  opacity: 0;
+  visibility: hidden;
+}
+.searchBox-active {
+  right: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.searchBox .search-input {
+  border: none;
+  outline: none;
+  height: 50px;
+  font-size: 12px;
+}
+
+.searchBtn {
+  transition: 0.5s ease-in-out;
+}
+.searchBtn-active {
+  left: 0;
+}
+
+.closeBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  scale: 0;
+}
+
+.closeBtn-active {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.5s;
+  scale: 1;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+}
+.services-tabs {
+  position: relative;
+  font-size: 15px;
+}
+.tabs-sections {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--color-white);
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  font-size: 13px;
+  text-align: center;
+  cursor: pointer;
+  transition-property: color background;
+}
+.tabs-sections:hover {
+  background: var(--color-primary);
+  color: var(--color-bg);
+  transition: 0.5s all ease-in-out;
+}
+.active-tabs-sections {
+  background: var(--color-primary);
+  color: var(--color-bg);
+  transition: 0.5s all ease-in-out;
+}
+.dropdown-section {
+  position: absolute;
+  transition: 0.5s all ease-in-out;
+  width: 100%;
+  height: 30%;
+  opacity: 0;
+  visibility: hidden;
+}
+.drop-property {
+  background: var(--color-primary);
+  color: var(--color-bg);
+  margin-top: 31px;
+}
+
+/*==================HEADER-SOCIALS=====================*/
+.mobile__icon {
+  font-weight: 600;
+  display: none;
+}
+.toggle {
+  font-size: 25px;
+  display: none;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+}
+.links {
+  z-index: 1;
+  width: 47%;
+  top: 121%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 17px;
+  align-items: center;
+  border: 1px solid var(--color-primary-variant);
+}
+ .links .link::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: var(--mainHov-color);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: scaleX(0);
+  transition: transform .25s ease-in-out;
+}
+.links .link:hover::after {
+  transform: scaleX(1);
+}
+/*-----------------------------register-title---------------------*/
+.register-title h3 {
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.close-menu {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  color: white;
+  margin: auto;
+  right: 147px;
+  z-index: 500;
+  top: 7px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+/* .hidden__menu {
+  display: none;
+} */
+/* ===================MEDIA QUERIES (MEDIUM DEVICES) =============================*/
+/* @media screen and (max-width: 2280px) {
+.links {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+.mobile-bar{
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+} */
+@media screen and (max-width: 1280px) {
+  .container.about__container {
+    display: flex;
+    flex-direction: column;
+}
+}
+/* ===================MEDIA QUERIES (SMALL DEVICES) =============================*/
+/* @media screen and (max-width: 992px) {
+  .toggle {
+    display: flex;
+  }
+  .basic-menu {
+    display: none;
+  }
+.links {
+  height: 18.3rem;
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+.mobile-bar{
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+}
+} */
+/* @media screen and (max-width: 853px) {
+  .links {
+    height: 18.3rem;
+    }
+}
+
+@media screen and (max-width: 430px) {
+  .links {
+    height: 33vh;
+  }
+} */
+@media screen and (max-width: 768px) {
+  .me {
+    width: 70px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 414px) {
+  /* .links {
+    height: 33vh;
+} */
+.container.header__container h1 {
+  font-size: 26px;
+  margin-bottom: 34px;
+}
+.container.header__container h1 {
+  font-size: 24px;
+  margin-bottom: 29px;
+}
+/* .hidden {
+display: none;
+} */
+.me {
+  width: 50px;
+  height: 40px;
+}
+}
+@media screen and (max-width: 412px) {
+  .container.header__container h1 {
+    font-size: 24px;
+    margin-bottom: 29px;
+}
+}
+/* @media screen and (max-width: 390px)
+{
+  .links {
+    height: 34vh;
+}
+} */
+@media screen and (max-width: 375px) {
+  .container.header__container h1 {
+    font-size: 24px;
+    margin-bottom: 29px;
+}
+/* .links {
+  height: 40vh;
+}
+.hidden {
+  display: none;
+} */
+}
+@media screen and (max-width: 360px) {
+.about__me {
+  width: 60%;
+}
+  /* .links {
+      height: 36vh;
+  } */
+}
+/* @media screen and (max-width: 344px) {
+.links {
+  height: 31vh;
+}
+  } */

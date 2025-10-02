@@ -1,0 +1,28 @@
+  .servicesSection__container {
+    width: 80%;
+  }  
+  .service__card {
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    padding: 1rem;
+    transition-property: border;
+    width: 300px;
+  }
+  .service__card:hover {
+    border: 1px solid var(--border-hover-color);
+    box-shadow: rgb(204, 230, 255) 0px 2px 8px;
+    cursor: default;
+    transition: ease-in-out 0.5s;
+  }
+  .service__icon {
+    border: 1px solid var(--border-hover-color);
+    box-shadow: rgb(204, 230, 255) 0px 2px 8px;
+    background-color: rgb(235, 245, 255);
+    padding: 7px;
+    color: var(--color-primary);
+    border-radius: 50%;
+    margin-bottom: 2rem;
+  }
+  .about__service h5, .about__service small {
+    font-size: 10px;
+  }

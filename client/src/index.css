@@ -1,0 +1,414 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+:root {
+  --color-bg: #fff !important;
+  --color-bg-variant: #4caf50 !important;
+  --color-bg-variant-hover: #c8e6c9 !important;
+  --color-primary: #4caf50 !important;
+  --color-secondary: rgb(0, 110, 255) !important;
+  --color-primary-variant: #4caf50 !important;
+  --color-white: #e9e9e9;
+  --color-gray: #989898;
+  --color-opacity-white: #e5e5e5e8;
+  --color-light: hsla(0,0%,100%,.88);
+  --color-text: black;
+  --border-color: rgb(67, 72, 77) !important;
+  --border-hover-color:#bcfcbc!important;
+  --color-danger: red;
+  --color-input: #4caf50 !important;
+  --color-link: #4caf50 !important;
+  --shadow-color: 0 0 15px 15px rgba(13, 109, 253, 0.048);
+  --shadow-dark-color: 0 0 15px 15px rgba(3, 3, 3, 0.274);
+  --color-overlay: #b5ff8352 !important;
+  --transition: 0.5s all ease-in-out;
+  --color-cursor: rgb(0, 255, 115) !important;
+  --color-orange: #4caf50 !important;
+  --cursor-outline-shade: 0.3;
+  --cursor-size: 10px;
+  --cursor-outline-size: 12px;
+}
+
+body {
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1, h2, h3, h4, h5 {
+  font-weight: 500;
+}
+p {
+  font-size: 10px;
+  text-align: center;
+}
+img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.btn, a {
+  cursor: pointer;
+  transition: var(--transition);
+}
+.bluColor{
+  color: var(--color-link);
+}
+.width-full {
+  width: 100%;
+}
+.btn, .btnX {
+  border-radius: .4rem;
+  font-size: 11px;
+  padding: 4px;
+}
+.btn-active {
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-white);
+  color: var(--color-white);
+}
+.btn:hover {
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-white);
+  color: var(--color-white);
+}
+.btn:hover .arrowExplore {
+  color: var(--color-white);
+}
+.btnX {
+  background-color: transparent;
+  border: 1px solid var(--color-bg-variant);
+}
+.btn {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}
+.btnX:hover {
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-white);
+  color: var(--color-white);
+}
+.linkHover {
+  color: var(--color-text);
+  text-decoration: none !important;;
+}
+.linkHover:hover {
+  color: var(--color-secondary);
+}
+.border-color{
+  border-bottom: 1px solid var(--color-bg-variant);
+}
+.item-font {
+  font-size: 15px;
+}
+.app-container {
+  position: relative;
+  height: 100% !important;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.app-content {
+  margin-top: 114px;
+}
+.side-content {
+  position: relative;
+  width: 100%;
+}
+.icon-branch {
+    background: var(--color-primary);
+    font-size: 47px;
+    padding: 7px;
+    color: var(--color-bg);
+    border-radius: 50%;
+    margin: 20px;
+}
+.text-light {
+  color: var(--color-light);
+  font-size: 25px;
+}
+.loader-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-white);
+  z-index: 100000;
+  position: relative;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 3px solid var(--color-gray);
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+} 
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-bottom-color: var(--color-primary);
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.dashboard-container {
+  display: flex;
+  position: relative;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--color-white)
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
+
+.pagination {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  font-size: 11px;
+}
+
+.pagination .page-num {
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: normal;
+  border: 1px solid var(--color-primary);
+  margin: 2px;
+}
+
+.pagination .page-num:hover {
+  color: var(--color-white);
+  background-color: var(--color-link);
+}
+.pagination .page-num:focus {
+  color: var(--color-white);
+  background-color: var(--color-link);
+}
+.search-content, .search-results-list {
+  position: relative;
+  width: 35rem;
+}
+.carousel.carousel-slider, .carousel-root {
+  height: 100%;
+}
+.carousel .slider-wrapper {
+  padding-top: 10px;
+}
+.carousel .slider-wrapper.axis-horizontal .slider {
+  justify-content: left;
+}
+ /*===========================menu===========================*/
+ 
+ .item-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.639);
+  z-index: 1000000000;
+}
+ .menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 100%;
+  z-index: 999999;
+}
+.close {
+  width: 100%;
+  height: 60px;
+  padding: 10px 20px;
+}
+
+.close span .icon {
+  font-size: 29px;
+  background: var(--color-text);
+  padding: 5px;
+  border-radius: 50%;
+  color: var(--color-white);
+  cursor: pointer;
+}
+/*--------------------FORM-------------------------------*/
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input, textarea, select {
+  font-size: 12px;
+  width: 90%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+  border-bottom: 3px solid var(--color-bg-variant);
+  transition-property: border;
+  resize: none;
+}
+input:hover, textarea:hover, select:hover {
+  border: 1px solid var(--border-hover-color);
+  box-shadow: rgb(204, 230, 255) 0px 2px 8px;
+  transition: ease-in-out 0.5s;
+}
+input, textarea {
+  padding: 12px;
+  color: var(--color-primary);
+}
+select {
+  padding: 4px;
+}
+#search-input::-webkit-search-cancel-button {
+  display: none;
+}
+svg#search-icon {
+  position: absolute;
+  color: var(--color-text);
+  font-size: 12px;
+  cursor: pointer;
+}
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: var(--color-primary-variant);
+  background: transparent;
+  color: var(--color-primary);
+  border-radius: 6px;
+  border: 1px solid;
+  width: 15rem;
+  height: 2rem;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  transition-property: color background;
+  }
+  .tabs:hover {
+  background: var(--color-primary);
+  color: var(--color-bg);
+  transition: 0.5s all ease-in-out;
+  }
+  .active-tabs {
+  background: var(--color-primary);
+  color: var(--color-bg);
+  transition: 0.5s all ease-in-out;
+  }
+@media screen and (max-width: 768px)
+{
+  a.tabs {
+    width: 6rem;
+    height: 2rem;
+    font-size: 9px;
+}
+.arrowExplore {
+  font-size: 15px;
+  }
+  .tabs {
+  font-size: 9px;
+  }
+  .search-content, .search-results-list {
+    width: 447px;
+  }
+  .pagination .page-num {
+    padding: 6px;
+  }
+  .item-font {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 540px)
+{
+  a.tabs {
+    width: 10rem;
+    height: 2rem;
+    font-size: 13px;
+}
+.lists {
+  flex-direction: column;
+}
+.search-content, .search-results-list {
+  width: 260px;
+}
+.btn, .btnX {
+  font-size: 8px;
+}
+.pagination .page-num {
+  padding: 3px;
+}
+}
+@media screen and (max-width: 412px)
+{
+.lists {
+  flex-direction: column;
+}
+}
+@media screen and (max-width: 375px){
+.lists {
+  flex-direction: column;
+}
+}
+@media screen and (max-width: 360px){
+.lists {
+  flex-direction: column;
+}
+.btn {
+  font-size: 6px;
+}
+}
+@media screen and (max-width: 280px){
+.lists {
+  flex-direction: column;
+}
+p {
+  font-size: 10px;
+}
+}

@@ -1,0 +1,43 @@
+.stacked-boxes-container {
+    height: 20rem;
+    position: relative;
+    top: 50px;
+  }
+  
+  .box {
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    color: var(--color-white);
+    font-size: 12px;
+    transition: z-index 0.3s; /* Smooth transition for z-index change */
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    box-shadow: var(--shadow-color);
+  }
+  
+  .box1 {
+    background-image: linear-gradient(to right top, #6cdbfd, #42b7fa, #209fda, #118ec0, #016391);
+    top: 25px;
+    z-index: 3;
+    transform: skewY(30deg); /* Tilt the boxes */
+  }
+  
+  .box2 {
+    background-image: linear-gradient(to right top, #6cdbfd, #42b7fa, #209fda, #118ec0, #016391);
+    top: 45px;
+    z-index: 2;
+    transform: skewY(20deg); /* Tilt the boxes */
+  }
+  
+  .box3 {
+    background-image: linear-gradient(to right top, #6cdbfd, #42b7fa, #209fda, #118ec0, #016391);
+    top: 80px;
+    z-index: 1;
+  }
+  .box:hover {
+    z-index: 4; /* Bring the hovered box to the forefront */
+    transform: skewY(0deg); /* Tilt the boxes */
+    top: 80px;
+  }

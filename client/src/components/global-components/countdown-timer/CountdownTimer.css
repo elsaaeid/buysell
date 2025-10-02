@@ -1,0 +1,74 @@
+.shows-item {
+    padding: 0 18px;
+    font-size: 12px !important;
+    background-color: var(--color-bg-variant-hover);
+    color: var(--color-text);
+    position: fixed;
+    top: 0;
+    z-index: 300;
+    height: 7%;
+}
+
+.fire {
+    color: var(--color-orange);
+    display: inline-block;
+    margin: 0 10px; /* Add some spacing around the icon */
+    font-size: 18px !important;
+}
+.animate-vibrate {
+    animation: vibrate 0.8s linear infinite; /* Adjust duration for slower vibration */
+}
+
+@keyframes vibrate {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-3px); /* Move up */
+    }
+    50% {
+        transform: translateY(3px); /* Move down */
+    }
+    75% {
+        transform: translateY(-3px); /* Move up */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.time-title {
+    font-size: 7px;
+}
+.shows-end {
+    width: 200px;
+}
+@media screen and (max-width: 820px)
+{
+    .shows-item {
+        padding: 0 6px;
+        font-size: 10px !important;
+    }
+    .shows-end {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .shows-item {
+        padding: 0 5px;
+        font-size: 8px !important;
+    }
+
+    .fire {
+        margin: 0 4px; /* Add some spacing around the icon */
+        font-size: 18px !important;
+    }
+}
+@media screen and (max-width: 414px)
+{
+    .shows-item {
+        padding: 0 6px;
+        font-size: 7px !important;
+    }
+}

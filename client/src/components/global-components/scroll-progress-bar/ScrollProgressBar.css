@@ -1,0 +1,8 @@
+.progress-bar {
+    position: fixed;
+    top: 0;
+    height: 5px; /* Height of the progress bar */
+    background-color: var(--color-primary); /* Color of the progress bar */
+    transition: width 0.2s ease; /* Smooth transition */
+    z-index: 101; /* Ensure it stays on top */
+}

@@ -1,0 +1,78 @@
+.related-items-container {
+    background-color: var(--color-gray);
+}
+.carousel-related-items {
+    width: 70%;
+}
+.related-item {
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    transition-property: background;
+    width: 100%; /* Full width for each item */
+    max-width: 400px; /* Limit max width for larger screens */
+    margin: 0 auto; /* Center items */
+  }
+  .related-item:hover {
+    border: 1px solid var(--border-hover-color);
+    box-shadow: rgb(204, 230, 255) 0px 2px 8px;
+    cursor: default;
+    transition: ease-in-out 0.5s;
+  }
+.section__title {
+    font-weight: bolder;
+}
+.item-image img {
+    width: 30%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: add some border radius */
+}
+
+.read-more {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Space between text and button */
+    font-size: 11px;
+}
+.read-more:hover .ArrowForward {
+    display: none; /* Hide ArrowForward on hover */
+}
+
+.read-more:hover .ArrowRight {
+    display: block; /* Show ArrowRight on hover */
+}
+
+.ArrowRight {
+    display: none; /* Ensure ArrowRight is hidden by default */
+}
+.carousel .carousel-status {
+    display: none;
+}
+.carousel .control-next.control-arrow:before {
+    border-left: 8px solid var(--color-primary);
+}
+
+.carousel .control-prev.control-arrow:before {
+    border-right: 8px solid var(--color-primary);
+}
+
+.carousel .control-dots .dot {
+    background: var(--color-primary);
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+    background: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .related-item {
+        max-width: 100%; /* Allow more width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .read-more {
+        font-size: 9px;
+    }
+}
